@@ -25,6 +25,68 @@
   }
 }
 
+/* Estilos para el componente Changelog */
+#changelog-container {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.changelog {
+  background-color: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.changelog-item {
+  display: flex;
+  padding: 1.8rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.changelog-item:last-child {
+  border-bottom: none;
+}
+
+.changelog-item:hover {
+  background-color: rgba(0, 102, 204, 0.05);
+}
+
+.changelog-date {
+  flex: 0 0 150px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-right: 1.5rem;
+}
+
+.changelog-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.changelog-content p {
+  color: var(--text-color);
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .changelog-item {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .changelog-date {
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+  }
+}
+
 
 
 * {
